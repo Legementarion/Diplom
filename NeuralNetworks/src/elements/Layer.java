@@ -1,4 +1,6 @@
-package abstracts;
+package elements;
+
+import abstracts.AbstractNeuron;
 
 import java.io.Serializable;
 
