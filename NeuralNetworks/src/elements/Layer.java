@@ -1,8 +1,6 @@
 package elements;
 
 import abstracts.AbstractLayer;
-import abstracts.AbstractNeuron;
-
 import java.io.Serializable;
 
 /**
