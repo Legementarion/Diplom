@@ -4,6 +4,7 @@ import abstracts.AbstractNeuron;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Created by baylrock on 11.01.2016.
@@ -13,9 +14,24 @@ public class Neuron implements AbstractNeuron, Serializable {
     private int index;
     private ArrayList<Float> set;
 
+    public Neuron() {
+        WEIGHT = (float)(1 / (new Random().nextInt(5) + 3));
+    }
+
+    public Neuron(float WEIGHT) {
+        this.WEIGHT = WEIGHT;
+    }
+
+
+
     @Override
     public void setValue(float value) {
         set.add(value);
+    }
+
+    @Override
+    public void setValue(ArrayList<Float> value) {
+        set.addAll(value);
     }
 
     @Override
