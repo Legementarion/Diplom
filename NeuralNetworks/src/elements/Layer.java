@@ -29,7 +29,7 @@ public class Layer implements AbstractLayer,Serializable {
 
     @Override
     public void insertValue(double value) {
-
+        //TODO ЧТО ОНО ДОЛЖНО ДЕЛАТЬ?
     }
 
     @Override
@@ -46,7 +46,7 @@ public class Layer implements AbstractLayer,Serializable {
 
     @Override
     public void getNeuronWeight(Neuron neuron) {
-
+        //TODO  НУЖНА ЛИ ЭТА ЕРЕСЬ?
     }
 
     @Override

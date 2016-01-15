@@ -26,6 +26,8 @@ public class Neuron implements AbstractNeuron, Serializable {
     @Override
     public void funktion() {
         WEIGHT = summSet();
+        //TODO ТУТ НУЖНА ФУНКЦИЯ КОТОРАЯ ИЗМЕНЯЕТ ВЕС НЕЙРОНА ОТНОСИТЕЛЬНО ВХОДЯЩИХ СИГНАЛОВ `SET - ARRAYLIST` | ПОКА ЭТО ИХ СУММА
+
     }
 
     @Override
