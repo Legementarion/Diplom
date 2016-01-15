@@ -7,9 +7,9 @@ package abstracts;
 public interface AbstractNeuron {
 
     void setValue(float value);
-    void getValue();
+    float getValue(int index);
     void funktion();
-    void getWeight();
-    void setWeight();
+    float getWeight();
+    void setWeight(float weight);
 
 }
