@@ -6,8 +6,9 @@ import elements.Neuron;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Created by baylrock on 11.01.2016.
+ * Created by baylrock and Legementario on 11.01.2016.
  */
+
 public interface AbstractLayer {
 
         public void setLayer_set(ConcurrentHashMap<Integer,Neuron> layer_set);
