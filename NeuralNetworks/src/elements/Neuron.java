@@ -9,7 +9,4 @@ import java.io.Serializable;
  */
 public class Neuron implements AbstractNeuron, Serializable {
 
-
-
-
 }
