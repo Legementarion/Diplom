@@ -12,8 +12,10 @@ import java.util.concurrent.ConcurrentHashMap;
 public class Layer implements AbstractLayer,Serializable {
     private LayerName name;
     private ConcurrentHashMap<Integer,Neuron> layer_set;
+    private Layer next_layer;
 
-    public Layer(int size) {
+    public Layer(int size, LayerName name) {
+        this.name = name;
         buildLayer(size);
     }
 
@@ -52,5 +54,19 @@ public class Layer implements AbstractLayer,Serializable {
     @Override
     public void getNeuronWeight(int index) {
 
+    }
+
+    @Override
+    public void setNextLayer(Layer layer) {
+        this.next_layer = layer;
+    }
+
+    @Override
+    public Layer getNextLayer() {
+        return next_layer;
+    }
+
+    public Layer getInstance() {
+        return this;
     }
 }

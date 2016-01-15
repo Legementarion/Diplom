@@ -1,5 +1,6 @@
 package abstracts;
 
+import elements.Layer;
 import elements.Neuron;
 
 import java.util.concurrent.ConcurrentHashMap;
@@ -16,5 +17,7 @@ public interface AbstractLayer {
         void buildLayer(int Neurons);
         void getNeuronWeight(Neuron neuron);
         void getNeuronWeight(int index);
+        void setNextLayer(Layer layer);
+        Layer getNextLayer();
 
 }
