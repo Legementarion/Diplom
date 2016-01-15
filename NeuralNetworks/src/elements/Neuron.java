@@ -10,6 +10,28 @@ import java.io.Serializable;
 public class Neuron implements AbstractNeuron, Serializable {
 
 
+    @Override
+    public void setValue(float value) {
 
+    }
 
+    @Override
+    public void getValue() {
+
+    }
+
+    @Override
+    public void funktion() {
+
+    }
+
+    @Override
+    public void getWeight() {
+
+    }
+
+    @Override
+    public void setWeight() {
+
+    }
 }
