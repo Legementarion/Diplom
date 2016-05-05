@@ -3,6 +3,7 @@ package abstracts;
 import elements.Layer;
 import elements.Neuron;
 
+import java.util.ArrayList;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -11,8 +12,8 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public interface AbstractLayer {
 
-        public void setLayer_set(ConcurrentHashMap<Integer,Neuron> layer_set);
-        public ConcurrentHashMap<Integer,Neuron> getLayer_set();
+        public void setNeuronsSet( ArrayList<Neuron> layer_set);
+        public ArrayList<Neuron> getNeuronsSet();
         public void insertValue(double value);
         void addNeuron(Neuron neuron);
         void buildLayer(int Neurons);
@@ -20,5 +21,6 @@ public interface AbstractLayer {
         void getNeuronWeight(int index);
         void setNextLayer(Layer layer);
         Layer getNextLayer();
+        void linkOutputsWithLayer(AbstractLayer layer);
 
 }

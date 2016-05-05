@@ -16,6 +16,11 @@ public class Neuron implements AbstractNeuron, Serializable {
     private float step; //коэффициент предохраняющий от слишком значительных изменений весов
     private int index;  // порядковый номер нейронна
     private ArrayList<Float> set;  //массив входящих значений
+    private ArrayList<AbstractNeuron> neuronOutputLinks;
+
+    {
+        neuronOutputLinks = new ArrayList<>();
+    }
 
 
     //TODO насколько я понимаю мы должны ещё описать функцию "ошибки" и влияние её на вес 
@@ -45,6 +50,11 @@ public class Neuron implements AbstractNeuron, Serializable {
     @Override
     public void setValue(ArrayList<Float> value) {
         set.addAll(value);
+    }
+
+    @Override
+    public void addLink( AbstractNeuron neuron ) {
+        neuronOutputLinks.add( neuron );
     }
 
     @Override

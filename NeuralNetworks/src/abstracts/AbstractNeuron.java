@@ -15,5 +15,6 @@ public interface AbstractNeuron {
     float getWeight();
     void setWeight(float weight);
     public void setValue(ArrayList<Float> value);
+    void addLink(AbstractNeuron neuron);
 
 }
