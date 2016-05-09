@@ -1,3 +1,4 @@
+import enums.LayerName;
 import managers.NeuroManager;
 
 import java.io.Serializable;
@@ -12,5 +13,9 @@ public class NeuroMain implements Serializable {
     public static void main (String[] args) {
         NeuroMain nm = new NeuroMain();
         nm.neuroNet = NeuroManager.getInstance();
+        nm.neuroNet.addLayer( 10, LayerName.INPUT );
     }
+
+
+
 }

@@ -7,10 +7,7 @@ import elements.Layer;
  * Created by baylrock on 15.01.2016.
  */
 public enum LayerName {
-    INPUT( "INPUT" ) {
-
-    },
-
+    INPUT( "INPUT" ),
     STELTH( "STELTH" ),
     OUTPUT( "OUTPUT" );
 

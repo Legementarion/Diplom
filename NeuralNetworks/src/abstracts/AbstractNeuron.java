@@ -9,12 +9,14 @@ import java.util.ArrayList;
 
 public interface AbstractNeuron {
 
-    void setValue(float value);
+    void setInputWeight( float value);
     float getValue(int index);
     void funktion();
     float getWeight();
     void setWeight(float weight);
-    public void setValue(ArrayList<Float> value);
+    public void setInputWeight( ArrayList<Float> value);
     void addLink(AbstractNeuron neuron);
+    void think();
+    void sendWeights();
 
 }

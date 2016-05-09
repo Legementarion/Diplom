@@ -21,10 +21,7 @@ public class NeuroManager implements Serializable {
     } // пустой конструктор?
 
     public static NeuroManager getInstance() {
-        if ( neuroManager == null ) {
-            neuroManager = new NeuroManager();
-        }
-        return neuroManager;
+        return neuroManager == null ? new NeuroManager() : neuroManager;
     }
 
     /**

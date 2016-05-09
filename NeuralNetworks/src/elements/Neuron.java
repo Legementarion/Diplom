@@ -2,7 +2,6 @@ package elements;
 
 import abstracts.AbstractNeuron;
 
-import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Random;
@@ -39,7 +38,7 @@ public class Neuron implements AbstractNeuron, Serializable {
      * @param value
      */
     @Override
-    public void setValue(float value) {
+    public void setInputWeight( float value) {
         set.add(value);
     }
 
@@ -48,7 +47,7 @@ public class Neuron implements AbstractNeuron, Serializable {
      * @param value
      */
     @Override
-    public void setValue(ArrayList<Float> value) {
+    public void setInputWeight( ArrayList<Float> value) {
         set.addAll(value);
     }
 
@@ -102,6 +101,23 @@ public class Neuron implements AbstractNeuron, Serializable {
             return 0;
         } else{
             return summ;
+        }
+    }
+
+    @Override
+    public void think() {
+        float weightsSum = 0;
+        for (Float inerValue: set) {
+            weightsSum+=inerValue;
+        }
+        // TODO: 09.05.2016 ActivationFunc
+        WEIGHT = weightsSum;
+    }
+
+    @Override
+    public void sendWeights() {
+        for (AbstractNeuron outputNeuron: neuronOutputLinks) {
+            outputNeuron.setInputWeight( getWeight() );
         }
     }
 }
