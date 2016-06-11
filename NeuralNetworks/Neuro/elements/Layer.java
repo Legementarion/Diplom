@@ -2,7 +2,7 @@ package Neuro.elements;
 
 import Neuro.abstracts.AbstractLayer;
 import Neuro.abstracts.AbstractNeuron;
-import enums.LayerName;
+import Neuro.enums.LayerName;
 
 import java.io.Serializable;
 import java.util.ArrayList;

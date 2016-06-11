@@ -1,7 +1,7 @@
 package Neuro.abstracts;
 
-import elements.Layer;
-import elements.Neuron;
+import Neuro.elements.Layer;
+import Neuro.elements.Neuron;
 
 import java.util.ArrayList;
 
