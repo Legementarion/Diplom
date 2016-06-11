@@ -1,10 +1,9 @@
-package abstracts;
+package Neuro.abstracts;
 
 import elements.Layer;
 import elements.Neuron;
 
 import java.util.ArrayList;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by baylrock and Legementario on 11.01.2016.

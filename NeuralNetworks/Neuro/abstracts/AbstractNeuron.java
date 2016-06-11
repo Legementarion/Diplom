@@ -1,4 +1,4 @@
-package abstracts;
+package Neuro.abstracts;
 
 
 import java.util.ArrayList;

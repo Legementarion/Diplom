@@ -1,7 +1,7 @@
-package enums;
+package Neuro.enums;
 
-import abstracts.AbstractLayer;
-import elements.Layer;
+import Neuro.abstracts.AbstractLayer;
+import Neuro.elements.Layer;
 
 /**
  * Created by baylrock on 15.01.2016.

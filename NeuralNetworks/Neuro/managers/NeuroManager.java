@@ -1,8 +1,8 @@
-package managers;
+package Neuro.managers;
 
-import abstracts.AbstractLayer;
-import enums.LayerName;
-import exeption.MergeException;
+import Neuro.abstracts.AbstractLayer;
+import Neuro.enums.LayerName;
+import Neuro.exeption.MergeException;
 
 import java.io.Serializable;
 import java.util.ArrayList;

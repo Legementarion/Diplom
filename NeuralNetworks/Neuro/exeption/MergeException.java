@@ -1,4 +1,4 @@
-package exeption;
+package Neuro.exeption;
 
 /**
  * Created by baylrock on 06.05.2016.

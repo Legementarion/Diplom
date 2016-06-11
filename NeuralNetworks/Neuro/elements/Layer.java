@@ -1,14 +1,11 @@
-package elements;
+package Neuro.elements;
 
-import abstracts.AbstractLayer;
-import abstracts.AbstractNeuron;
+import Neuro.abstracts.AbstractLayer;
+import Neuro.abstracts.AbstractNeuron;
 import enums.LayerName;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by Baylrock and Legementario on 11.01.2016.

@@ -1,6 +1,6 @@
-package elements;
+package Neuro.elements;
 
-import abstracts.AbstractNeuron;
+import Neuro.abstracts.AbstractNeuron;
 
 import java.io.Serializable;
 import java.util.ArrayList;
